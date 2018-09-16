@@ -37,7 +37,7 @@ node {
 node {
    stage 'deploy Canary'
    sh 'echo "write your deploy code here"; sleep 5;'
-   cp 'README.md /tmp'
+   scp 'README.md /tmp'
    
    stage 'ansible'
    sh 'ansible --version'
