@@ -37,6 +37,9 @@ node {
 node {
    stage 'deploy Canary'
    sh 'echo "write your deploy code here"; sleep 5;'
+   
+      stage 'ansible
+   sh 'ansible --version'
 
    stage 'deploy Production'
    input 'Proceed?'
